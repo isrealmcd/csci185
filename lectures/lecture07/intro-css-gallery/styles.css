@@ -4,16 +4,36 @@ body {
 
 /* Your code here */
 header {
-    background-color: goldenrod;
+    background-color: #DCEDFF;
     padding: 60px;
+    color: rgb(57, 87, 108) ;
 
 }
+header:hover{
+    background-color: beige;
+}
+main {
+    background-color: #94B0DA;
+}
+h1 {font-style: italic;
+    font-stretch: extra-expanded;
+    font: bolder;}
 main > section {
+    background-color: #8F91A2;
     border: 1px black solid;
     margin: 20px;
     display:inline-block ;
     
+    
 }
 main p {
     margin: 20px;
+    
+}
+section:hover {
+    opacity: 1;
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate */
+    transform: rotate(5deg);
+    color: aliceblue;
+    background-color: rgb(20, 106, 106);
 }
