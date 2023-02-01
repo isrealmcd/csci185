@@ -16,3 +16,6 @@ p{
 header,section,footer{
     padding: 60px 15vw;
 }
+id#about,id#contacts {
+    min-height: 100vh;
+}
