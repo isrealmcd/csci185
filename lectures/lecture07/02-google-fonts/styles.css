@@ -1,0 +1,20 @@
+/* Your style rules here */
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+
+
+header{
+
+
+}
+
+h1,h2,body{
+font-family: 'Aboreto';
+box-sizing:border-box;
+
+
+}
+nav{
+margin: 20px;
+
+}
