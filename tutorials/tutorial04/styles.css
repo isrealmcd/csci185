@@ -47,13 +47,15 @@ button {
     text-transform: uppercase;
     font-weight: bold;
     display: inline-block;
+    transition: all 1s ease-out;
     
 }
-button:hover {
-    transition: all 1s ease-out;
-    color: aquamarine;
-    opacity: 0.5;
+.item a:hover{
+background-color: rgb(12, 206, 203);
+
+
 }
+
 
 #contact form {
     margin: 0 auto;
