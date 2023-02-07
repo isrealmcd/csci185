@@ -9,19 +9,21 @@
                         }
                         
                         a:visited {
-                            color: rgb(222, 52, 216);
+                            color: rgb(0, 0, 0);
                             background-color: transparent;
                             text-decoration: none;
+                            transition: all 1s ease-out;
                         }
                         
                         a:hover {
-                            color: rgb(56, 218, 28);
+                            color: rgb(37, 28, 218);
                             background-color: transparent;
                             text-decoration: underline;
+
                         }
                         
                         a:active {
-                            color: rgb(239, 120, 30);
+                            color: rgb(31, 143, 143);
                             background-color: transparent;
                             text-decoration: underline;
                         }
