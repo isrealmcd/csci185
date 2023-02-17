@@ -10,3 +10,46 @@ body {
 }
 
 /* create your child rules here:  */
+
+.grid-container{
+display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border: 1px solid black;
+}
+.item-1{
+    grid-column-start: 1;
+    grid-column-end: 4 ;
+    background-color: azure;
+    border: 1px solid black;
+ 
+}
+.item-2{
+    grid-column-start:3 ;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    background-color: azure;
+    border: 1px solid black;
+}
+.item-3{
+    grid-column-start: 1;
+    grid-column-end: 4 ;
+    grid-row-start: 3;
+    background-color: azure;
+    border: 1px solid black;
+}
+.item-4{
+    grid-column-start:3 ;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    background-color: azure;
+    border: 1px solid black;
+}
+.item-5{
+    grid-column-start: 1;
+    grid-column-end: 4 ;
+    grid-row-start: 5;
+    background-color: azure;
+    border: 1px solid black;
+}
