@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap);
 
+/*  stlying the link hover to make it "glow" green + make the bullet next to each link glow  */
 a:link {
     color: rgb(255, 255, 255); 
     background-color: transparent; 
@@ -30,7 +31,8 @@ ul li:hover {
     transition: all 1s ease-out; 
 }
 
-
+/* Styling the header + body to give it transparent black boxes 
+    & a background image that stays fixed when scrolling*/
 
 header{
     font-family: 'Roboto Condensed', sans-serif;
@@ -67,7 +69,7 @@ body{
     margin: 75px;
     
 }
-@media (max-width: 800px) {
+@media (max-width: 800px ) {
     .item{
         background-color: rgba(0, 0, 0, 0.7);  
         border: 3px solid rgb(255, 255, 255);
@@ -77,7 +79,7 @@ body{
     .coursework{
         display: grid;
         grid-template-columns: 1fr, 2fr;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         column-gap: 10px;
         row-gap: 10px;
     }
