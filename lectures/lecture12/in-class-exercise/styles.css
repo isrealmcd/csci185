@@ -24,30 +24,53 @@ header {
     justify-content: center; /* horizontal-align text in the center */
     
     
-    /* background-image: url('solar-eclipse.jpg');
+    background-image: url('mald.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    background-position-y: center; */
+    background-position-y: center; 
+    background-attachment: fixed;
 }
-
+#section1{
+    background-color: black;
+    color: azure;
+}
 section {
     padding: 50px 15vh;
-}
+    
 
+}
 #section2 {
     background-color: black;
     padding-left: 0px;
 
-    /* background-image: url('solar-eclipse-multiples.jpg');
+    background-image: url('birb.jpg');
     background-repeat: no-repeat;
     background-position: center right;
     background-size: contain;
-    background-attachment: fixed; */
+    background-attachment: fixed;
+    color: azure; 
+}
+#section3 {
+    background-color: black;
+    padding-left: 0px;
+
+    background-image: url('wave.jpg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+    background-attachment: fixed;
+    color: azure; 
 }
 
 .text-container {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    margin: 40px;
+    width: 50vw;
+}
+.text-container2 {
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 40px;
     margin: 40px;
     width: 50vw;
@@ -60,7 +83,8 @@ p {
 
 footer {
     display: flex;
-    background: #F0F0F0;
+    color: azure;
+    background: #000000;
     height: 50vh;
     align-items: center;
     justify-content: center;

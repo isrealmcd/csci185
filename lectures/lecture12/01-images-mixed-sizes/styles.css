@@ -34,11 +34,15 @@ img {
     min-height: 300px;
     /* filter: grayscale(100%); */
     /* https://www.w3schools.com/cssref/css3_pr_filter.asp */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .img1 {
     background-image: url('images/img1.jpg');
+    
 }
 
 .img2 {
@@ -47,4 +51,10 @@ img {
 
 .img3 {
     background-image: url('images/img3.jpg');
+}
+.image p {
+    color: azure;
+    font-weight: bold;
+    font-size: 35px;
+    text-shadow: 3px 3px black;
 }
