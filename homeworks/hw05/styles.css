@@ -122,19 +122,48 @@ font-family: 'Nova Slim';
 #contact p{
 font-family: Arial, Helvetica, sans-serif;
     text-align: left;
-    padding-left: 16.5%;
-    padding-right: 16.5%;
-    margin-bottom: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 20px;
 }
 .contact-details{
    display: grid;
    grid-template-columns: 1fr 1fr;
+   padding-left: 16.5%;
+   padding-right: 16.5%;
+   column-gap: 10px;
    
 }
 #form{
-    
+    grid-template-columns: 1 /2;
+    padding:40px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #contact-info{
-    
-    
+    grid-template-columns: 2 /3;
+    margin-left: 100px;
+    text-align: left;
+    margin-top: 35px;
+}
+.row1{
+    margin:10px;
+}
+input{
+    background-color: rgb(235, 231, 231);
+    border: none;
+    height: 30px;
+}
+textarea{
+width: 95%;
+background-color: rgb(235, 231, 231);
+border:none;
+}
+#submit{
+    background-color: rgb(117, 224, 194); 
+    border:solid darkgreen 1px;
+}
+.row2{
+    display: flex;
+    align-items:baseline;
+    font-family: Arial, Helvetica, sans-serif;
 }
