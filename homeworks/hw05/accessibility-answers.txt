@@ -1,10 +1,16 @@
 1. What corrections did you have to make?
 
 Your answers here.
+/* had to add the language to 'en" for english next to the html
+also had to add <label> tags with labels to the "contact details" section
+/*
 
 1. Do you think your website is usable if you turn off the CSS? Why or why not?
 
 Your answers here.
+/* yes, the css adds an ease of accesibility, however when i turned off the css 
+the website was still usable with no issues
+/*
 
 1. Is your site is tabbable? In other words, without the use of the mouse, are all the links and buttons accessible using the tab key?
 

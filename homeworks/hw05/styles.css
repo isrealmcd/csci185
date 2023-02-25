@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap');
 html {
     scroll-behavior: smooth;
 }
@@ -11,3 +12,129 @@ body {
 }
 
 /* Your CSS Code Here! */
+/*-----------part 1 nav--------*/
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content:end ;
+    
+   
+}
+nav a{
+  color: black;  
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/*---------part2 header---------*/
+header{
+   background-color: rgb(117, 224, 194); 
+   font-family: 'Nova Slim';
+   
+
+}
+header div{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: small;
+  
+  
+}
+header img{
+    height: 15%;
+    width: 15%;
+    border-radius: 50%;
+}
+header h1{
+    color: black;
+}
+/*----------part 3 about me--------*/
+#about h2{
+    font-family: 'Nova Slim';
+    text-align: left;
+    margin: 40px;
+    padding-left: 16.5%;
+}
+#about p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+        padding-left: 16.5%;
+        padding-right: 16.5%;
+    
+}
+#ap1{
+    padding-bottom: 50px;
+}
+/*---------par4 projects---------*/
+#projects h2{
+    font-family: 'Nova Slim';
+    margin-left: 20%;
+   
+}
+
+.project-holder{
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 40px;
+        row-gap: 40px;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+}
+#projects{
+    background-color: rgb(229, 229, 229);
+}
+.card1{
+    grid-template-columns: 1/2;
+    grid-template-rows: 1;
+    padding-bottom: 50px;
+}
+.card2{
+    grid-template-columns: 2/3;
+    grid-template-rows: 1;
+    padding-bottom: 50px;
+}
+.card3{
+    grid-template-columns: 1/2;
+    grid-template-rows: 2;
+}
+.card4{
+    grid-template-columns: 2/3;
+    grid-template-rows: 2;
+}
+/*------part 5--------*/
+
+#contact h2 {
+font-family: 'Nova Slim';
+    text-align: left;
+    padding-left: 16.5%;
+    margin-top: 80px;
+}
+#contact p{
+font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding-left: 16.5%;
+    padding-right: 16.5%;
+    margin-bottom: 80px;
+}
+.contact-details{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   
+}
+#form{
+    
+}
+#contact-info{
+    
+    
+}
