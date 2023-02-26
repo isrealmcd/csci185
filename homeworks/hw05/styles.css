@@ -30,6 +30,7 @@ nav a{
 header{
    background-color: rgb(117, 224, 194); 
    font-family: 'Nova Slim';
+   padding-top: 1%;
    
 
 }
@@ -125,6 +126,7 @@ font-family: Arial, Helvetica, sans-serif;
     padding-left: 10%;
     padding-right: 10%;
     margin-bottom: 20px;
+    margin-left: 6.5%;
 }
 .contact-details{
    display: grid;
@@ -136,8 +138,9 @@ font-family: Arial, Helvetica, sans-serif;
 }
 #form{
     grid-template-columns: 1 /2;
-    padding:40px;
+    padding-top: 8%;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 #contact-info{
     grid-template-columns: 2 /3;
@@ -152,18 +155,99 @@ input{
     background-color: rgb(235, 231, 231);
     border: none;
     height: 30px;
+    width: 47%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 10px;
 }
 textarea{
 width: 95%;
+height: 100%;
 background-color: rgb(235, 231, 231);
 border:none;
+font-family: Arial, Helvetica, sans-serif;
+text-indent: 10px;
+
 }
 #submit{
     background-color: rgb(117, 224, 194); 
-    border:solid darkgreen 1px;
+    height: 40px;
+    width:115px;
+    border-radius: 3.14%;
+    color: black;
+    text-indent: -2px;
 }
 .row2{
     display: flex;
     align-items:baseline;
     font-family: Arial, Helvetica, sans-serif;
+}
+/*---------part 6 footer----------*/
+
+footer{
+    padding:70px;
+    background-color: lightgray;
+    text-align: center;
+    font-weight: bold;
+   
+}
+/*--------part 7 responsive design--------*/
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        
+        align-items: center;
+       justify-content: flex-start;
+        margin-bottom: 20%;
+        margin-top: -20%;
+       
+    }
+    header{
+        padding: 20%;
+
+    }
+    header img{
+        height: 50%;
+        width: 50%;
+        border-radius: 50%;
+    }
+    #projects h2{
+       padding-top: 3%;
+       
+    }
+    .project-holder{
+        display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr ;
+          
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 50px;
+        padding-bottom: 10%;
+         
+    }
+    .card1 img{
+       width:100%;
+    }
+    .card2 img{
+        width:100%;
+    }
+    .card3 img{
+        width:100%;
+    }
+    .card4 img{
+        width:100%;
+    }
+    .contact-details{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 16.5%;
+        padding-right: 16.5%;
+        column-gap: 10px;
+        
+     }
+     #contact-info{
+       padding-left: -50%;
+       margin-left: -1px;
+       padding-bottom: 20%;
+}
 }

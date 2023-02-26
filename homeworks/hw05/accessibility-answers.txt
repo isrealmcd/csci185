@@ -15,7 +15,7 @@ the website was still usable with no issues
 1. Is your site is tabbable? In other words, without the use of the mouse, are all the links and buttons accessible using the tab key?
 
 Your answers here.
-
+/* yes */
 
 
 Reminder: don't forget to include a screenshot of your Wave report and link to it from your homepage!
