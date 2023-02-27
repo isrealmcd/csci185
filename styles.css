@@ -69,6 +69,7 @@ body{
     margin: 75px;
     
 }
+/*Media query to change style of page when viewed in smaller screen */
 @media (max-width: 800px ) {
     .item{
         background-color: rgba(0, 0, 0, 0.7);  
