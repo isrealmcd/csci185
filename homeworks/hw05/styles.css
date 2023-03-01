@@ -175,6 +175,13 @@ text-indent: 10px;
     border-radius: 3.14%;
     color: black;
     text-indent: -2px;
+    transition: all 1s ease-out;
+}
+#submit:hover{
+    border: solid 2px rgb(143, 224, 201) ;
+    height: 48px;
+    width: 123px;
+    transform: translate(-5px, -5px);
 }
 .row2{
     display: flex;
