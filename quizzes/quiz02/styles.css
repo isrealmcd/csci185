@@ -54,7 +54,7 @@ main, h1{
  }
  /*--------------*/
 
- .cards {
+ .cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
    
