@@ -17,15 +17,36 @@ const updateColor = (ev) => {
     If yellow and blue are turned on, make the background green.
     If everything is turned on, then make the background black.
     */
-    if (redElement.value === 'on') {
-        setBackgroundColor('red');
-    } else if (yellowElement.value === 'on') {
+    if (yellowElement.value === 'on' && redElement.value === 'on' && blueElement.value === 'on') {
+        setBackgroundColor('gray');
+        
+     } 
+     else if (yellowElement.value === 'on' && redElement.value === 'on') {
+        setBackgroundColor('orange');
+        
+     } 
+     else if (yellowElement.value === 'on' && blueElement.value === 'on') {
+        setBackgroundColor('green');
+    } 
+    else if (redElement.value === 'on' && blueElement.value === 'on') {
+        setBackgroundColor('purple');
+    } 
+    else if (yellowElement.value === 'on') {
         setBackgroundColor('yellow');
-    } else {
-        setBackgroundColor('white');
-    }
-
-};
+    } 
+    else if (blueElement.value === 'on') {
+        setBackgroundColor('blue');
+    } 
+    else if (redElement.value === 'on') {
+        setBackgroundColor('red');
+    } 
+    else {(
+        setBackgroundColor('white')
+    )
+}
+}
+    
+    
 
 
 
