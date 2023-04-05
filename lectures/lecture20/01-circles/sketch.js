@@ -4,15 +4,18 @@ function setup() {
     createCanvas(canvasWidth, canvasHeight);
 
     // fill('red');
-    let y = 0;
+   /* let y = 0;
     let x = 0;
     while (y <= 900){
 
         circle(100, (y), 50);
         y += 25 ;
         
+    }*/
+    let counter = 0
+    while (counter< 15){
+        circle(100, counter * 50, 50 + counter* 30);
     }
-
   
     noFill();
    

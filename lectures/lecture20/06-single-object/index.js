@@ -5,6 +5,8 @@ const person = {
     score: 300 
 };
 
+
+//targeting main, put card inside main, image is person.pic
 document.querySelector('main').insertAdjacentHTML(
     "beforeend", 
     `<img src="${person.pic}">
