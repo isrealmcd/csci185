@@ -13,7 +13,7 @@ const people = [
 // Your job: Use a "for...of" loop to render a unique card for each person 
 //           in the list above. You will replace the image url, name, and 
 //           points with a template variable.
-function pointForWanda(){
+/*function pointForWanda(){
     people[2].score += 10;
     showWinner();
 }
@@ -62,5 +62,4 @@ function showWinner(){
     </div>
 `;
 document.querySelector(".players").innerHTML = template;
-//++i;
-
+//++i;}
