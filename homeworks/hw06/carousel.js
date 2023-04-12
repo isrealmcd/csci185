@@ -12,47 +12,43 @@ const photos = [
 ];
 let idx = 0;
 
-
-/* This function should:
-    (1) display the new image inside of the .current-photo container, and 
-    (2) update the caption inside of the .caption paragraph
-*/
-//
+//setting the variables for the current photo and caption
+const imgElement = document.querySelector('.current-photo img');
+const captionElement = document.querySelector('.caption');
 
 function showImage() {
-    console.log('Show image');
-    document.querySelector("")
+    //just sets the photo being displayed from the array to whatever idx is at
+    imgElement.src = photos[idx];
+    //sets caption element to display idx + 1 / 10
+    captionElement.textContent = `Image ${idx + 1} of 10`;
 }
 
-
-/* This function should set the idx variable 
-   to one greater than the current value of idx, 
-   and then invoke the showImage() function.
-   If the idx gets to one less than the length of 
-   the array, set idx to 0.
-*/
 function forward() {
     console.log('forward');
-    ++idx;
-    showImage();
+    idx++;
 
-    if(idx > 10);
+    if (idx >= photos.length) {
         idx = 0;
+    }
+
+    showImage();
 }
 
-
-/* This function should set the idx variable 
-   to one less than the current value of idx, 
-   and then invoke the showImage() function.
-   If the idx gets to the beginning, set idx to
-   one less than the length of the array.
-*/
 function back() {
     console.log('back');
-    --idx;
-    showImage()
+    idx--;
 
-        if(idx < 10);
-            idx = 10;
+    if (idx < 0) {
+        idx = photos.length - 1;
+    }
 
+    showImage();
 }
+
+showImage();
+
+//added this so the caurosel will cycle backwards and forwards from 10 to 1 and from 1 back to 10
+//i ran into issues when just using the if statements where it would only display the first two images
+//and when you try to cycle back it would display "photo 0 / 10" and not display any image
+document.querySelector('.carousel .btn-next').addEventListener('click', forward);
+document.querySelector('.carousel .btn-prev').addEventListener('click', back); 
