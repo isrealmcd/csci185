@@ -12,32 +12,40 @@ function search (ev) {
     }
 }
 
-async function getTracks (term) {
-    document.querySelector('#tracks').innerHTML = '';
-
+async function getTracks(term) {
+    const tracksContainer = document.querySelector('#tracks');
+    tracksContainer.innerHTML = '';
+  
     const url = `https://www.apitutor.org/spotify/simple/v1/search?type=track&q=${term}`;
-    const data = await fetch (url).then(response => response.json());
-    console.log (data);
-
-    for (let i = 0 ; i < 5; i++) {
-    const track = data[i];
-    const template =`
-        <section class="track-item preview" onclick="loadTrack('${track.id}')">
-            <img src="${track.album.image_url}" alt="track ${track.name}">
-            <i class="fas play-track fa-play" aria-hidden="true"></i>
-            <div class="label">
-                <h2>${track.name}</h2>
-                <p>
-                    ${track.artist.name}
-                </p>
-            </div>
-        </section>`;
-        document.querySelector('#tracks').innerHTML += template;
-        
-};
-
-
-}
+    const data = await fetch(url).then(response => response.json());
+    console.log(data);
+  
+    for (let i = 0; i < 5; i++) {
+      const track = data[i];
+      const trackItem = document.createElement('section');
+      trackItem.classList.add('track-item', 'preview');
+      trackItem.setAttribute('data-track-id', track.id);
+  
+      trackItem.innerHTML = `
+        <img src="${track.album.image_url}" alt="track ${track.name}">
+        <i class="fas play-track fa-play" aria-hidden="true"></i>
+        <div class="label">
+          <h2>${track.name}</h2>
+          <p>${track.artist.name}</p>
+        </div>
+      `;
+  
+      trackItem.addEventListener('click', () => loadTrack(track.id));
+      trackItem.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          loadTrack(track.id);
+        }
+      });
+  
+      tracksContainer.appendChild(trackItem);
+    }
+  }
 
 async function getAlbums(term) {
     document.querySelector('#albums').innerHTML = '';
