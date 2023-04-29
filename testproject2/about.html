@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>About Us</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto+Condensed:wght@300&display=swap">
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			height: 100vh;
+			background: #000;
+		}
+        .navbar {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 50px;
+			background-color: rgba(0, 0, 0, 0.5);
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			z-index: 2;
+		}
+
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+			font-size: 1.2em;
+		}
+
+		video {
+			position: fixed;
+			top: 0;
+			left: -900px;
+            right: 30px;
+			min-width: 100%;
+			min-height: 100%;
+			object-fit: cover;
+			z-index: -1;
+		}
+
+		.overlay {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: rgba(0, 0, 0, 0.7);
+			padding: 30px;
+			text-align: center;
+			color: #fff;
+			z-index: 1;
+		}
+
+		.overlay h1 {
+			font-size: 3em;
+			margin-bottom: 20px;
+		}
+
+		.overlay p {
+			font-size: 1.5em;
+		}
+        .overlay * {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: bold;
+            
+        }
+        .overlay p{
+            text-align: left;
+        }
+        .navbar *{
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: bold;
+        }
+	</style>
+</head>
+<body>
+    <div class="navbar">
+		<a href="./index.html">Home</a>
+		<a href="./services.html">Services</a>
+		<a href="./contact.html">Contact</a>
+	</div>
+	<video autoplay muted loop>
+		<source src="videos/WNC.mp4" type="video/mp4">
+		
+	</video>
+	<div class="overlay">
+		<h1>COACH SOL</h1>
+<ul>
+        <p>Coach Sol is a record holding D1 track athlete from Central NC</p>
+    <br>
+        <p>Currently the 2022-2023 UNCA Track Team -Field- Captian</p>
+    <br>
+        <p>He holds multiple facility records as well as the winning 2023 indoor NCAA Mens Shot-put Big South Championship</p>
+    <br>
+        <p>Sol has been throwing for almost a decade and has coached people of all ages and backgrounds</p>
+    <br>    
+        <p>Currently Ranked top 100 in the world for Mens Shot-put</p>
+    <br>    
+        <p>Ranked number 4 in New Zealand where he holds dual citizenship, he currently has a PR of 18.46m</p>
+</ul>	
+</div>
+</body>
+</html>
